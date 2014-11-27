@@ -9,7 +9,7 @@ class Member < ActiveRecord::Base
   :url => "/files/:class/:attachment/:id/:style/:basename.:extension",
   :path => ":rails_root/public/files/:class/:attachment/:id/:style/:basename.:extension",
   :styles  => { :small => "200x200#", :large => "700x700>"}, 
-  :default_url => "/assets/profile.png"
+  :default_url => "/public/profile.png"
 
   #validations
   validates_attachment_content_type :photo, :content_type => /\Aimage\/.*\Z/
