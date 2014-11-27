@@ -1,0 +1,149 @@
+$txt_color: #F1F1F1;
+$txt_color_hover: #FCCB56;
+$sidebar_color: #E85248;
+$sidebar_width: 230px;
+$animation_time: 0.25s;
+
+.sidebar {
+	left:0;
+	overflow:hidden;
+	position:fixed;
+	width:0;
+	height:100%;
+	background:	$sidebar_color;
+	z-index:1;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+	transition: width $animation_time;
+	-ms-transition: width $animation_time;
+    -webkit-transition: width $animation_time;
+    -moz-transition: width $animation_time;
+
+	ul {
+		padding: 0;
+		margin: 0;
+	}
+
+	li {
+		text-align: right;
+		margin: 0;
+		list-style-type: none;
+		overflow: hidden;
+		height: 48px;
+		a {
+			display: block;
+			font-family: Lato;
+			color: $txt_color;
+			font-size: 20px;
+			font-weight: 600;
+			padding-left: 20px;
+			padding-right: 20px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+
+		/* unvisited link */
+		a:link {
+		   text-decoration: none;
+		}
+		/* visited link */
+		a:visited {
+		  text-decoration: none;
+		}
+		/* mouse over link */
+		a:hover {
+		   //background-color: $sidebar_color_hover;
+		   color: $txt_color_hover;
+		   text-decoration: none;
+		  // opacity: 0.75;
+		}
+		/* selected link */
+		a:active {
+		    text-decoration: none;
+		}
+	}
+}
+
+.sidebar-active {
+	width:$sidebar_width;
+}
+
+.sidebar-overlay {
+	position:fixed;
+	width: 100%;
+	height: 100%;
+	left: $sidebar_width;
+	z-index: 1;
+}
+.container-sidebar {
+	width:100%;
+	height:100%;
+	transition: transform $animation_time;
+	-ms-transition: transform $animation_time;
+    -webkit-transition: transform $animation_time;
+    -moz-transition: transform $animation_time;
+}
+
+.container-sidebar-active {
+	position:fixed;
+	transform: translateX($sidebar_width);
+	-ms-transform: translateX($sidebar_width);
+    -webkit-transform: translateX($sidebar_width);
+    -moz-transform: translateX($sidebar_width);
+}
+
+#sidebar-btn {
+	width: 50px;
+	height: 50px;
+	position: relative;
+	top:10px;
+
+	font-size: 40px;
+	font-family: Lato;
+	font-weight: 300;
+	text-align: center;
+	color: $sidebar_color;
+	z-index: 1;
+}
+
+#sidebar-btn:hover {
+	cursor: pointer;
+}
+
+.btn-login {
+  color: $txt_color;
+  padding: 0 5px 0 5px;
+  display: table;
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: auto;
+  margin-right: auto;
+  border-width: 3px;
+  border-style: solid;
+  border-color: $txt_color;
+	&:link {
+	   text-decoration: none;
+	}
+	/* visited link */
+	&:visited {
+	  text-decoration: none;
+	}
+	/* mouse over link */
+	&:hover {
+	   background-color: $txt_color_hover;
+  	   border-color:  $txt_color_hover;
+  	   color: $txt_color;
+	}
+	/* selected link */
+	&:active {
+	    text-decoration: none;
+	}
+}
+.perl {
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	width: 100%;
+	color:$txt_color;
+}

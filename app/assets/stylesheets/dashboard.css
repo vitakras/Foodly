@@ -1,0 +1,198 @@
+.meal-container {
+    margin-top:15px;
+    margin-bottom:15px;
+}
+
+.meal, .back {
+  /*background-color: blue;*/
+  border-radius: 4px;
+  /*border: 2px solid #00a539;*/
+
+  height: 400px;
+  width:100%;
+  font-family: Lato;
+
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+
+  overflow:hidden;
+
+  /* Set the transition effects */
+  -webkit-transition: -webkit-transform 0.4s;
+  -moz-transition: -moz-transform 0.4s;
+  -o-transition: -o-transform 0.4s;
+  transition: transform 0.4s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.meal h1 {
+  font-size: 30px;
+  color: #E85248;
+  text-align:left;
+
+  margin-top:5px;
+  margin-bottom:5px;
+  margin-left:0;
+}
+
+@media screen and (max-width: 500px) {
+    .meal h1 {
+      margin: 10px;
+      font-size: 20px;
+    }
+
+    .meal h2 {
+      margin: 10px;
+      font-size: 15px;
+    }
+}
+
+.meal h2 {
+  font-size: 20px;
+  font-style: italic;
+  color: white;
+  text-align:left;
+
+  margin-top:5px;
+  margin-bottom:5px;
+  margin-left:17px;
+  margin-right:17px;
+
+  font-family: "Lato";
+}
+
+.meal .category {
+  font-size: 15px;
+  color: white;
+
+  position: absolute;
+  bottom: 10px;
+
+  border-top: 2px solid white;
+}
+
+
+.panel .front {
+	height: inherit;
+	position: absolute;
+  width: inherit;
+	top: 0;
+	z-index: 900;
+	text-align: center;
+	-webkit-transform: rotateX(0deg) rotateY(0deg);
+	   -moz-transform: rotateX(0deg) rotateY(0deg);
+	-webkit-transform-style: preserve-3d;
+	   -moz-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+	   -moz-backface-visibility: hidden;
+	-webkit-transition: all .5s ease-in-out;
+	   -moz-transition: all .5s ease-in-out;
+		-ms-transition: all .5s ease-in-out;
+		 -o-transition: all .5s ease-in-out;
+			transition: all .5s ease-in-out;
+}
+
+.panel .back {
+	height: inherit;
+	position: absolute;
+	top: 0;
+	z-index: 1000;
+	-webkit-transform: rotateY(-180deg);
+	   -moz-transform: rotateY(-180deg);
+	-webkit-transform-style: preserve-3d;
+	   -moz-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+	   -moz-backface-visibility: hidden;
+	-webkit-transition: all .5s ease-in-out;
+	   -moz-transition: all .5s ease-in-out;
+		-ms-transition: all .5s ease-in-out;
+		 -o-transition: all .5s ease-in-out;
+			transition: all .5s ease-in-out;
+
+
+  background-color: #E85248;
+}
+
+.panel.flip .front {
+	z-index: 900;
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+}
+.panel.flip .back {
+	z-index: 1000;
+	-webkit-transform: rotateX(0deg) rotateY(0deg);
+	-moz-transform: rotateX(0deg) rotateY(0deg);
+}
+
+.panel .front .profile {
+    height: 100%;
+    width:100%;
+    position: absolute;
+    top: -270px;
+    z-index: 1100;
+    text-align: center;
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+
+    background-color:#E85248;
+}
+
+.panel .front .profile:hover {
+  top:0;
+}
+
+.meal .author-bio h1{
+  margin-left:17px;
+  margin-top:17px;
+  margin-bottom:17px;
+
+  color: white;
+
+  position:relative;
+  top:270px;
+}
+
+.meal .author-bio h2{
+  color: white;
+
+  position:absolute;
+  top:17px;
+
+  margin-left:17px;
+  margin-right:17px;
+}
+
+.meal-photo {
+  width:100%;
+  height:auto;
+
+  position: relative;
+  top:130px;
+}
+
+.meal-author-photo {
+  height:100px !important;
+  width:100px !important;
+
+  position: absolute;
+  right: 17px !important;
+  bottom:17px !important;
+
+  margin-bottom: 0 !important;
+  margin-right: 0 !important;
+
+  border-color: white !important;
+}

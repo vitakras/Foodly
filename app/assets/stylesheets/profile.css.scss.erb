@@ -1,0 +1,111 @@
+// Place all the styles related to the Profile controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$txt_color: #E85248;
+$txt_font: "Old Standard tt;";
+
+.profile-bio {
+	text-align: center;
+	
+	label {
+		font-size: 35px;
+		font-weight: 600;
+	}
+
+	.email {
+		font-size: 15px;
+	}
+
+	p {
+		max-width: 650px;
+		margin: 10px auto 10px auto;
+	    font-size: 20px;
+	    font-weight: 600;
+	}
+}
+.edit_member {
+	input[type="file"] {
+		position:absolute;
+		width:140px;
+		height:140px;
+		opacity: 0;
+	}
+
+
+	input[type="file"]:hover {
+		cursor: pointer;
+	}
+
+
+	input[type="text"] {
+		display: block;
+		margin: 10px auto 0 auto;
+		border: none;
+		text-align: center;
+		font-size: 35px;
+		font-weight: 600;
+		height: auto;
+		color: $txt_color;
+	}
+
+	textarea {
+		margin: 10px 20% 0 20%;
+		min-width: 230px;
+		max-width: 650px;
+		width: 60%;
+		height:300px;
+		resize:none;
+		color: $txt_color;
+		border: none;
+		text-align: center;
+		font-size: 20px;
+		font-weight: 600;
+	}
+
+	textarea:focus, input:focus{
+    	outline: 0;
+	}
+
+	.btn {
+		background:white;
+		display:block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.profile-edit-btn {
+	height:0;
+	width:50px;
+	float: right;
+
+	a {
+		position:relative;
+		top:-35px;
+		background: url(/assets/crayon.svg);
+		background-size: 60%;
+		background-repeat: no-repeat;
+		background-position-x: 8px;
+		background-position-y: 6px;
+		width: 50px;
+		height: 50px;
+		display: block;
+	}
+
+	.btn {
+		width:auto;
+		position:relative;
+		top:-50px;
+		right:20px;
+	}
+}
+
+.upload-btn {
+	width:140px;
+	height:140px;
+	position:absolute;
+	background-image: url("<%= asset_path 'mountain.svg' %>");
+	background-repeat:no-repeat;
+	background-size: 30%;
+	background-position: center;
+}

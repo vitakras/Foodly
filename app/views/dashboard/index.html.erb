@@ -1,0 +1,55 @@
+<div class="container meals-container">
+
+  <% @meals.each do |meal| %>
+
+    <div class="col-lg-6 col-md-4 col-sm-12 meal-container">
+      <div class="meal panel">
+
+        <div class="front box1">
+
+          <div class="profile slide-icon">
+
+            <div class="author-bio">
+              <h1>
+                <%= Member.find(meal.member_id).firstName %> <span><%= Member.find(meal.member_id).lastName %></span> added
+              </h1>
+
+              <h1 class="name">
+                "<%= meal.name %>"
+              </h1>
+
+              <h2>
+                <%= Member.find(meal.member_id).about %>
+              </h2>
+
+              <div class="circle meal-author-photo" style="background-image:url(<%= Member.find(meal.member_id).photo.url %>)"></div>
+            </div>
+
+          </div>
+
+          <%= image_tag(meal.meal_photos.first.photo,:class => "meal-photo") %>
+
+          <div class="category">
+
+          </div>
+        </div>
+
+        <div class="back box2">
+
+          <h2 class="recipe">
+            <%= meal.recipe %>
+          </h2>
+
+
+          <h2 class="price">
+            $<%= meal.price %>
+          </h2>
+
+        </div>
+
+      </div>
+    </div>
+
+  <% end %>
+
+</div>

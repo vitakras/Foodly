@@ -1,0 +1,22 @@
+<div class="col-lg-3 col-md-4 col-sm-6">
+  <div class="meal">
+    <%= form_for @meal, :url => {:action => 'create'}, :html => { :multipart => true } do |f| %>
+      <%= f.label :name %></br>
+      <%= f.text_field :name %></br>
+
+      <%= f.label :price %></br>
+      <%= f.text_field :price %></br>
+
+      <%= f.label :recipe %></br>
+      <%= f.text_field :recipe %></br>
+
+      <%= f.fields_for :meal_photos do |builder| %>
+        <%= builder.file_field :photo %>
+      <% end %>
+
+      <p>
+        <%= f.submit %>
+      </p>
+    <% end %>
+  </div>
+</div>
