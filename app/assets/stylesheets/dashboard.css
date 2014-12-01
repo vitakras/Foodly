@@ -165,6 +165,15 @@
   top:270px;
 }
 
+.author-bio a {
+  color: white;
+}
+
+.author-bio a:hover {
+  color: #FCCB56;
+  text-decoration: none;
+}
+
 .meal .author-bio h2{
   color: white;
 

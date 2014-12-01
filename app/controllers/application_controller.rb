@@ -12,7 +12,6 @@ class ApplicationController < ActionController::Base
   def configure_permitted_parameters
     devise_parameter_sanitizer.for(:sign_up) << :firstName
     devise_parameter_sanitizer.for(:sign_up) << :lastName
-    devise_parameter_sanitizer.for(:sign_up) << :username
   end
 
   #calls the perl script and saves its data 

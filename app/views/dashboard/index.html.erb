@@ -1,7 +1,7 @@
 <div class="container meals-container">
 
   <% @meals.each do |meal| %>
-
+    <% member = Member.find(meal.member_id) %>
     <div class="col-lg-6 col-md-4 col-sm-12 meal-container">
       <div class="meal panel">
 
@@ -11,7 +11,9 @@
 
             <div class="author-bio">
               <h1>
-                <%= Member.find(meal.member_id).firstName %> <span><%= Member.find(meal.member_id).lastName %></span> added
+                <span>  
+                <%= link_to "#{member.firstName} #{member.lastName}", show_profile_path(member) %>
+               </span> added
               </h1>
 
               <h1 class="name">
