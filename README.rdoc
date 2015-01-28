@@ -1,28 +1,16 @@
-== README
+== FOODLY
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Foodly is a social network for food lovers. You can share pictures of your favourite meals and recipes or browse and see what others users have share.
 
-Things you may want to cover:
+### Requirements 
+- Ruby 2.0.0+
+- Rails 4.0.0+ 
 
-* Ruby version
+### Version
+1.0.0 
 
-* System dependencies
+### Contributors
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+- Vitaliy Krasylovets - 500443090
+- Igar Liubavetskiy - 500439469
+- Richard Oliveira - 500435366
