@@ -2,14 +2,14 @@
 
 Foodly is a social network for food lovers. You can share pictures of your favourite meals and recipes or browse and see what others users have share.
 
-### Requirements 
+= Requirements 
 - Ruby 2.0.0+
 - Rails 4.0.0+ 
 
-### Version
+= Version
 1.0.0 
 
-### Contributors
+= Contributors
 
 - Vitaliy Krasylovets - 500443090
 - Igar Liubavetskiy - 500439469
